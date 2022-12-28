@@ -19,10 +19,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
-SESSION_NAME = getenv("SESSION_NAME", None)
-MONGO_URL = getenv("MONGO_URL", None)
+API_ID = int(getenv("API_ID", "14429998"))
+API_HASH = getenv("API_HASH", "5282ba528684583fa35b7fc3ad433b0c")
+SESSION_NAME = getenv("SESSION_NAME", " BQDA9VBSZZoOhBAQujm74GLQsIqyY9vI-tkie_0qSdrmxNX136uh1U_ei95J_95v9GqhiXBFoGliw5s9QoBmvtDggDTZ7QXjTmcEamx9HD3o4x2NPK6BCVofxxo4CMB_1b_7vUQtVR0l5eOTYthbCldaJDtZOUPU1yOb8vaXQhTvY05rhmW7r-e6EfURqf8y6XxpQgymkgGbVYXTIDV708GF9Qx9ODZoMNY9F6YX1JxNY02TqNEbvm64yvOhA9TMZLp0qVNn0jqqLmuucC8STqTbijeed8BqZS3n-DLonGwcjy9sTRhvoDl8HKmp2gkK-Z_pgnSXt74yMhoAmUAmfspgAAAAAUnvG2kA")
+MONGO_URL = getenv("MONGO_URL", "mongodb+srv://acha:acha@cluster0.pjq3j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 client = Client(SESSION_NAME, API_ID, API_HASH)
 
@@ -49,22 +49,19 @@ async def chatbot(client, message):
     umm = await message.reply_sticker("CAACAgIAAxkBAAEForNjAykaq_efq4Wd-9KZv-nNxJRn3AACIgMAAm2wQgO8x8PfoXC1eCkE")
     await asyncio.sleep(2)
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/2fabd1c33e888e0533891.jpg",
+        photo=f"https://telegra.ph//file/db0d2b2ddec8fcde8bf7c.jpg",
         caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━
 💥 A ᴘᴏᴡᴇʀғᴜʟ ᴀɪ ʙᴏᴛ
-ᴏғ ♻️ ᴅʀ ᴀsᴀᴅ ᴀʟɪ 🔥
+ᴏғ ♻️ ɪɴᴅ🔥
 ━━━━━━━━━━━━━━━━━
-ᴅᴀᴛᴀʙᴀsᴇ ʙᴀᴄᴋᴇɴᴅ ʙᴏᴛ ғᴏʀ ᴛɢ...
+ᴀʙᴏᴜᴛ ᴜs........... 
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴇʀ [ᴀsᴀᴅ ᴀʟɪ](https://t.me/Dr_Asad_Ali)
-┣★ ʜᴇᴀʀᴛ ᴜs  [ʜᴇᴀʀᴛ ❤️](https://t.me/Give_Me_Heart)
-┣★ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs [ᴏᴜʀ ᴏᴛʜᴇʀ ʙᴏᴛs](https://t.me/AsadSupport)
-┣★ ᴀʟᴇxᴀ ғᴇᴅ [ғᴇᴅ ʟᴏɢs](https://t.me/AlexaFed_Logs)
-┣★ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://github.com/TheTeamAlexa/AlexaAiMachineBot)
-┣★ ɴᴇᴛᴡᴏʀᴋ [ʀᴏᴄᴋs](https://t.me/Shayri_Music_Lovers)
+┣★ ᴄʀᴇᴀᴛᴇʀ [ᴢᴏɴᴇʏ](https://t.me/itszoneyi)
+┣★ ᴄʜᴀɴɴᴇʟ [ɪɴᴅ ʙʀᴀɴᴅ](https://t.me/ind_brand)
+┣★ ɢʀᴏᴜᴘ[sɪɴɢɪɴɢ ɢʀᴏᴜᴘ](https://t.me/INDIAN_SINGING_GROUPP)
 ┗━━━━━━━━━━━━━━━━━┛
 💞 
-IF HAVE ANY QUESTION THEN CONTACT » TO » MY » [OWNER] @Jankari_Ki_Duniya""",
+IF HAVE ANY QUESTION THEN CONTACT » TO » MY » [OWNER] @itszoney""",
     ) 
 
 
@@ -72,7 +69,7 @@ IF HAVE ANY QUESTION THEN CONTACT » TO » MY » [OWNER] @Jankari_Ki_Duniya""",
     filters.command("alive", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def start(client, message):
-    await message.reply_text(f"**ᴀʟᴇxᴀ ᴀɪ ᴜsᴇʀʙᴏᴛ ғᴏʀ ᴄʜᴀᴛᴛɪɴɢ ɪs ᴡᴏʀᴋɪɴɢ**")
+    await message.reply_text(f"**ᴀɪ ᴜsᴇʀʙᴏᴛ ғᴏʀ ᴄʜᴀᴛᴛɪɴɢ ɪs ᴡᴏʀᴋɪɴɢ**")
 
 @client.on_message(
     filters.command("chatbot off", prefixes=["/", ".", "?", "-"])
